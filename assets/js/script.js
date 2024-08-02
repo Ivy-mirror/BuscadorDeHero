@@ -3,7 +3,7 @@ $(document).ready(function () {
       e.preventDefault();
       let idHero = getHeroeID();
       if (idHero === null) {
-          // Alerta para el error del manejo de tipo de dato
+          //Alerta si no se ingresa un numero
           alert("Reintenta con un dígito numérico por favor");
       } else {
           let token = "d99f24a4825f426f9b0b4b4410645787";
@@ -21,6 +21,7 @@ $(document).ready(function () {
 function getHeroID() {
   const regex = /^\d+$/;
   let idHero = $("#inputHero").val();
+  //regular expresion
   if (regex.test(idHero)) {
       return idHero;
   } else {

@@ -82,7 +82,7 @@ function renderChart(response) {
       // Mostrar mensaje e imagen si no hay datos
       $("#chartContainer").html(`
           <p class='text-danger fw-bold'>Tu héroe o heroína es un simple mortal :(</p>
-          <img class='img-fluid w-75 yamcha' src='assets/img/yamcha.jpg' alt='Imagen de Yamcha'>
+          <img class='img-fluid w-75 poisonIvy' src='assets/img/poisonivy.jpg' alt='Imagen de Poison Ivy'>
       `);
   } else {
       // Configurar y renderizar el gráfico si hay datos
